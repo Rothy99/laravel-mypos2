@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+
 class ProductController extends Controller
 {
     public function Create(Request $request)
@@ -24,9 +25,9 @@ class ProductController extends Controller
         // Mocked user response
         $data = [
             'pro_name' => $productName,
-            'image' => $imagePath
+            'image' => $imagePath,
         ];
 
         return response()->json(['data' => $data, 'message' => 'product created successfully']);
     }
-    }
+}
