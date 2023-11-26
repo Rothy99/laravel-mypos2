@@ -27,8 +27,21 @@ class CategoryController extends Controller
                     'cat_id' => 'S003',
                     'cat_name'=>'Food',
                     'desc'=>'testing'
+                ],
+                (object) [
+                    'id' => 4,
+                    'cat_id' => 'S003',
+                    'cat_name'=>'Food',
+                    'desc'=>'testing'
+                ],
+                (object) [
+                    'id' => 5,
+                    'cat_id' => 'S003',
+                    'cat_name'=>'Food',
+                    'desc'=>'testing'
                 ]
             ];
+            
             $data=[
                 'data'=>$category
             ];
