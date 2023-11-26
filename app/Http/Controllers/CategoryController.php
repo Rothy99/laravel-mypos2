@@ -29,7 +29,6 @@ class CategoryController extends Controller
                     'desc'=>'testing'
                 ]
             ];
-
             $data=[
                 'data'=>$category
             ];
