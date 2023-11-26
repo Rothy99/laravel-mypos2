@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,7 @@ use App\Http\Controllers\CategoryController;
 |
 */
 Route::get('/List-Category', [CategoryController::Class, 'List_Category']);
+Route::post('/create', [ProductController::class, 'createUser']);
 Route::get('/', function () {
     return view('welcome');
 });
