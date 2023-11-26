@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CategortyController extends Controller
+class CategoryController extends Controller
 {
     public function List_Category(){
 

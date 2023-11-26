@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CategortyController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,7 @@ use App\Http\Controllers\CategortyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/List-Cateogry', [CategortyController::Class, 'List_Category']);
+Route::get('/List-Category', [CategoryController::Class, 'List_Category']);
 Route::get('/', function () {
     return view('welcome');
 });
