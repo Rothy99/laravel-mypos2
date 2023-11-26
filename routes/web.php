@@ -14,8 +14,8 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/List-Category', [CategoryController::Class, 'List_Category']);
-Route::post('/create', [ProductController::class, 'createUser']);
+Route::get('/List-Category', [CategoryController::class, 'List_Category']);
+Route::post('/Product/Create', [ProductController::class, 'createUser']);
 Route::get('/', function () {
     return view('welcome');
 });
