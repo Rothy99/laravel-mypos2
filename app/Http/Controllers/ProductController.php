@@ -77,7 +77,7 @@ class ProductController extends Controller
         return response()->json(['data' => $data, 'message' => 'product created successfully']);
     }
 }
-
+        $data=[
             'pro_name' => $input['pro_name'],
             'pro_code' => $input['pro_code'],
             'category_id' => $input['category_id'],
