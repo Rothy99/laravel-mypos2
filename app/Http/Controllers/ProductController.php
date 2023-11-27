@@ -1,10 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+
+
+
 
 class ProductController extends Controller
 {
@@ -63,6 +68,25 @@ class ProductController extends Controller
     
         // Mocked user response
         $data = [
+
+
+            'pro_name' => $productName,
+            'image' => $imagePath,
+        ];
+
+        return response()->json(['data' => $data, 'message' => 'product created successfully']);
+    }
+}
+
+            'pro_name' => $input['pro_name'],
+            'pro_code' => $input['pro_code'],
+            'category_id' => $input['category_id'],
+            'cur_stock' => 0,
+            'price' => $input['price'],
+            'alert' => $input['alert'],
+            'unit_id'  => $input['unit_id'],
+            'image' => $input['image'],
+
             'pro_name' => $input['pro_name'],
             'pro_code' => $input['pro_code'],
             'category_id' => $input['category_id'],
@@ -72,6 +96,7 @@ class ProductController extends Controller
             'unit_id'  => $input['unit_id'],
             'image' => $input['image'],
         ];
+
     
         // Simulate database insertion success
         // You can replace this with your actual database insertion logic
@@ -92,4 +117,8 @@ class ProductController extends Controller
                 ], 500);
         }
     }
+
 }
+
+}
+
