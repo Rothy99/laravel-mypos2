@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+
 
 class ProductController extends Controller
 {
@@ -63,6 +66,15 @@ class ProductController extends Controller
     
         // Mocked user response
         $data = [
+
+            'pro_name' => $productName,
+            'image' => $imagePath,
+        ];
+
+        return response()->json(['data' => $data, 'message' => 'product created successfully']);
+    }
+}
+=======
             'pro_name' => $input['pro_name'],
             'pro_code' => $input['pro_code'],
             'category_id' => $input['category_id'],
@@ -93,3 +105,4 @@ class ProductController extends Controller
         }
     }
 }
+
